@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3DA078E817EC270E002CAC15 /* STErrorHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA078E717EC270D002CAC15 /* STErrorHandler.m */; };
 		3DFF63B417EB806B0043E185 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DFF63B317EB806B0043E185 /* UIKit.framework */; };
 		3DFF63B617EB806B0043E185 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DFF63B517EB806B0043E185 /* Foundation.framework */; };
 		3DFF63B817EB806B0043E185 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DFF63B717EB806B0043E185 /* CoreGraphics.framework */; };
@@ -18,9 +19,20 @@
 		3DFF63CA17EB806B0043E185 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DFF63C917EB806B0043E185 /* Default@2x.png */; };
 		3DFF63CC17EB806B0043E185 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DFF63CB17EB806B0043E185 /* Default-568h@2x.png */; };
 		3DFF63CF17EB806B0043E185 /* SteelTwitter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3DFF63CD17EB806B0043E185 /* SteelTwitter.xcdatamodeld */; };
+		3DFF63D717EB811D0043E185 /* Tweet.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DFF63D617EB811D0043E185 /* Tweet.m */; };
+		3DFF63DB17EB816E0043E185 /* STViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DFF63D917EB816E0043E185 /* STViewController.m */; };
+		3DFF63DC17EB816E0043E185 /* STViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DFF63DA17EB816E0043E185 /* STViewController.xib */; };
+		3DFF63E417EB81F40043E185 /* STTimeline.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DFF63E317EB81F40043E185 /* STTimeline.m */; };
+		3DFF63E717EB82110043E185 /* STTokenManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DFF63E617EB82110043E185 /* STTokenManager.m */; };
+		3DFF63EC17EB83D30043E185 /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DFF63E917EB83D30043E185 /* Base64.m */; };
+		3DFF63ED17EB83D30043E185 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DFF63EB17EB83D30043E185 /* Constants.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3DA078E617EC270D002CAC15 /* STErrorHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STErrorHandler.h; sourceTree = "<group>"; };
+		3DA078E717EC270D002CAC15 /* STErrorHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STErrorHandler.m; sourceTree = "<group>"; };
+		3DF3DE6C17F1AACF0005C635 /* STDataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STDataManager.h; sourceTree = "<group>"; };
+		3DF3DE6D17F1AACF0005C635 /* STDataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STDataManager.m; sourceTree = "<group>"; };
 		3DFF63B017EB806B0043E185 /* SteelTwitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SteelTwitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DFF63B317EB806B0043E185 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3DFF63B517EB806B0043E185 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -36,6 +48,19 @@
 		3DFF63C917EB806B0043E185 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		3DFF63CB17EB806B0043E185 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		3DFF63CE17EB806B0043E185 /* SteelTwitter.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SteelTwitter.xcdatamodel; sourceTree = "<group>"; };
+		3DFF63D517EB811D0043E185 /* Tweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tweet.h; sourceTree = "<group>"; };
+		3DFF63D617EB811D0043E185 /* Tweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tweet.m; sourceTree = "<group>"; };
+		3DFF63D817EB816E0043E185 /* STViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STViewController.h; sourceTree = "<group>"; };
+		3DFF63D917EB816E0043E185 /* STViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STViewController.m; sourceTree = "<group>"; };
+		3DFF63DA17EB816E0043E185 /* STViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STViewController.xib; sourceTree = "<group>"; };
+		3DFF63E217EB81F40043E185 /* STTimeline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STTimeline.h; sourceTree = "<group>"; };
+		3DFF63E317EB81F40043E185 /* STTimeline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STTimeline.m; sourceTree = "<group>"; };
+		3DFF63E517EB82110043E185 /* STTokenManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STTokenManager.h; sourceTree = "<group>"; };
+		3DFF63E617EB82110043E185 /* STTokenManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STTokenManager.m; sourceTree = "<group>"; };
+		3DFF63E817EB83D30043E185 /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
+		3DFF63E917EB83D30043E185 /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64.m; sourceTree = "<group>"; };
+		3DFF63EA17EB83D30043E185 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		3DFF63EB17EB83D30043E185 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +78,62 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3DA078E917EC6069002CAC15 /* app */ = {
+			isa = PBXGroup;
+			children = (
+				3DFF63EA17EB83D30043E185 /* Constants.h */,
+				3DFF63EB17EB83D30043E185 /* Constants.m */,
+				3DFF63C417EB806B0043E185 /* STAppDelegate.h */,
+				3DFF63C517EB806B0043E185 /* STAppDelegate.m */,
+			);
+			name = app;
+			sourceTree = "<group>";
+		};
+		3DA078EA17EC607F002CAC15 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				3DA078E617EC270D002CAC15 /* STErrorHandler.h */,
+				3DA078E717EC270D002CAC15 /* STErrorHandler.m */,
+				3DFF63E217EB81F40043E185 /* STTimeline.h */,
+				3DFF63E317EB81F40043E185 /* STTimeline.m */,
+				3DA078ED17EC60F0002CAC15 /* authorization */,
+				3DFF63CD17EB806B0043E185 /* SteelTwitter.xcdatamodeld */,
+				3DFF63D517EB811D0043E185 /* Tweet.h */,
+				3DFF63D617EB811D0043E185 /* Tweet.m */,
+				3DF3DE6C17F1AACF0005C635 /* STDataManager.h */,
+				3DF3DE6D17F1AACF0005C635 /* STDataManager.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		3DA078EB17EC60C7002CAC15 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				3DFF63DA17EB816E0043E185 /* STViewController.xib */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		3DA078EC17EC60D2002CAC15 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				3DFF63D817EB816E0043E185 /* STViewController.h */,
+				3DFF63D917EB816E0043E185 /* STViewController.m */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		3DA078ED17EC60F0002CAC15 /* authorization */ = {
+			isa = PBXGroup;
+			children = (
+				3DFF63E817EB83D30043E185 /* Base64.h */,
+				3DFF63E917EB83D30043E185 /* Base64.m */,
+				3DFF63E517EB82110043E185 /* STTokenManager.h */,
+				3DFF63E617EB82110043E185 /* STTokenManager.m */,
+			);
+			name = authorization;
+			sourceTree = "<group>";
+		};
 		3DFF63A717EB806B0043E185 = {
 			isa = PBXGroup;
 			children = (
@@ -84,10 +165,11 @@
 		3DFF63BB17EB806B0043E185 /* SteelTwitter */ = {
 			isa = PBXGroup;
 			children = (
-				3DFF63C417EB806B0043E185 /* STAppDelegate.h */,
-				3DFF63C517EB806B0043E185 /* STAppDelegate.m */,
-				3DFF63CD17EB806B0043E185 /* SteelTwitter.xcdatamodeld */,
+				3DA078E917EC6069002CAC15 /* app */,
+				3DA078EA17EC607F002CAC15 /* model */,
 				3DFF63BC17EB806B0043E185 /* Supporting Files */,
+				3DA078EC17EC60D2002CAC15 /* controller */,
+				3DA078EB17EC60C7002CAC15 /* view */,
 			);
 			path = SteelTwitter;
 			sourceTree = "<group>";
@@ -162,6 +244,7 @@
 				3DFF63C817EB806B0043E185 /* Default.png in Resources */,
 				3DFF63CA17EB806B0043E185 /* Default@2x.png in Resources */,
 				3DFF63CC17EB806B0043E185 /* Default-568h@2x.png in Resources */,
+				3DFF63DC17EB816E0043E185 /* STViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,6 +258,13 @@
 				3DFF63C217EB806B0043E185 /* main.m in Sources */,
 				3DFF63C617EB806B0043E185 /* STAppDelegate.m in Sources */,
 				3DFF63CF17EB806B0043E185 /* SteelTwitter.xcdatamodeld in Sources */,
+				3DFF63D717EB811D0043E185 /* Tweet.m in Sources */,
+				3DFF63DB17EB816E0043E185 /* STViewController.m in Sources */,
+				3DFF63E417EB81F40043E185 /* STTimeline.m in Sources */,
+				3DFF63E717EB82110043E185 /* STTokenManager.m in Sources */,
+				3DFF63EC17EB83D30043E185 /* Base64.m in Sources */,
+				3DFF63ED17EB83D30043E185 /* Constants.m in Sources */,
+				3DA078E817EC270E002CAC15 /* STErrorHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +344,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SteelTwitter/SteelTwitter-Prefix.pch";
 				INFOPLIST_FILE = "SteelTwitter/SteelTwitter-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -265,6 +356,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SteelTwitter/SteelTwitter-Prefix.pch";
 				INFOPLIST_FILE = "SteelTwitter/SteelTwitter-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -289,6 +381,7 @@
 				3DFF63D417EB806B0043E185 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

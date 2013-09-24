@@ -8,9 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@class STViewController;
+
 @interface STAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+
+@property (nonatomic, retain) STViewController *viewController;
 
 @property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
