@@ -7,8 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "STTimeline.h"
 
-@interface STDataManager : NSObject <STTimelineDelegate>
+@interface STDataManager : NSObject <STTimelineDelegate> {
+    NSFetchRequest *_tweetsFetchRequest;
+    NSFetchRequest *_oldestTweetFetchRequest;
+    NSEntityDescription *_tweetEntity;
+}
 
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
 

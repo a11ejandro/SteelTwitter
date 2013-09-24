@@ -8,14 +8,16 @@
 
 #import <UIKit/UIKit.h>
 #import "STTimeline.h"
+#import "STDataManager.h"
 
-@interface STViewController : UITableViewController <STTimelineDelegate, NSFetchedResultsControllerDelegate> {
+@interface STViewController : UITableViewController <NSFetchedResultsControllerDelegate> {
     NSDateFormatter *_dateFormatter;
     UIRefreshControl *_refreshControl;
     NSEntityDescription *_tweetEntity;
     NSFetchRequest *_tweetsFetchRequest;
     NSFetchRequest *_oldestTweetFetchRequest;
     STTimeline *_timeline;
+    STDataManager *_dataManager;
 }
 
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;

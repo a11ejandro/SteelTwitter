@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D99068C17F1F27500451D60 /* STDataManager.h in Sources */ = {isa = PBXBuildFile; fileRef = 3DF3DE6C17F1AACF0005C635 /* STDataManager.h */; };
+		3D99068D17F1F27500451D60 /* STDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF3DE6D17F1AACF0005C635 /* STDataManager.m */; };
 		3DA078E817EC270E002CAC15 /* STErrorHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA078E717EC270D002CAC15 /* STErrorHandler.m */; };
 		3DFF63B417EB806B0043E185 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DFF63B317EB806B0043E185 /* UIKit.framework */; };
 		3DFF63B617EB806B0043E185 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DFF63B517EB806B0043E185 /* Foundation.framework */; };
@@ -255,6 +257,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D99068C17F1F27500451D60 /* STDataManager.h in Sources */,
+				3D99068D17F1F27500451D60 /* STDataManager.m in Sources */,
 				3DFF63C217EB806B0043E185 /* main.m in Sources */,
 				3DFF63C617EB806B0043E185 /* STAppDelegate.m in Sources */,
 				3DFF63CF17EB806B0043E185 /* SteelTwitter.xcdatamodeld in Sources */,
