@@ -19,15 +19,6 @@
 @implementation STViewController
 
 
-- (id)initWithStyle:(UITableViewStyle)style
-{
-    self = [super initWithStyle:style];
-    if (self) {
-        
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -65,7 +56,7 @@
 
 #pragma mark - Status Bar
 
-//Fix overlay of status bar. No status bar - no overlay.
+// Fix overlay of status bar. No status bar - no overlay.
 - (BOOL)prefersStatusBarHidden
 {
     return YES;
@@ -122,7 +113,6 @@
 
 - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Return NO if you do not want the item to be re-orderable.
     return NO;
 }
 

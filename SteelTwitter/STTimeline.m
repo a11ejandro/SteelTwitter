@@ -9,6 +9,7 @@
 #import "STTimeline.h"
 #import "STTokenManager.h"
 #import "STErrorHandler.h"
+#import "NSString+HTML.h"
 
 @implementation STTimeline
 
@@ -97,26 +98,28 @@
 
 #pragma mark - private
 
+// Parsing starts immediately after receiving. Calls delegate methods for each element.
 - (void) parseTweetsFromData: (NSData*) data
 {
-    NSMutableArray *tweets = [[NSMutableArray alloc] init];
     NSError* error;
     NSDictionary *rawTweets = [NSJSONSerialization JSONObjectWithData: data options: 0 error: &error];
     
     if (!error) {
         for (NSDictionary *rawTweet in rawTweets) {
-            NSString *text = [rawTweet valueForKey:STTweetTextKey];
+            NSString *rawText = [rawTweet valueForKey:STTweetTextKey];
+            NSString *text = [rawText kv_decodeHTMLCharacterEntities];
             
             NSDate *postingDate = [_dateFormatter dateFromString:[rawTweet valueForKey:STTweetCreationTimeKey]];
-            NSDictionary *tweet = [NSDictionary dictionaryWithObjectsAndKeys: text, STTweetTextKey, postingDate, STTweetCreationTimeKey, nil];
             
-            [self.delegate onTweet:tweet];
-            [tweets addObject:tweet];
+            if ((text != nil) && (postingDate != nil)) {
+                NSDictionary *tweet = [NSDictionary dictionaryWithObjectsAndKeys: text, STTweetTextKey, postingDate, STTweetCreationTimeKey, nil];
+                
+                [self.delegate onTweet:tweet];
+            }
         }
     }    
     [self.delegate didReceiveNewTimeline:error];
 }
-
 
 
 @end

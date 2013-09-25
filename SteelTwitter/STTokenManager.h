@@ -16,13 +16,15 @@
 
 @interface STTokenManager : NSObject {
     NSMutableData *_timelineData;
-    NSString *tokenCredentials;
-    NSUserDefaults *userDefaults;
+    NSString *_tokenCredentials;
+    NSUserDefaults *_userDefaults;
 }
 
 @property (weak, nonatomic) id <STTokenManagerDelegate> delegate;
-@property(nonatomic, readonly) NSString *token;
+@property(nonatomic, retain) NSString *token;
 
+
+// Receives token from server and notifies delegate if notify is YES
 - (void) receiveTokenAndNotify:(BOOL)notify;
 
 + (STTokenManager*) sharedInstance;

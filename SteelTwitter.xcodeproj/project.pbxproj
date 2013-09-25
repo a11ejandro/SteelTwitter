@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3D99068C17F1F27500451D60 /* STDataManager.h in Sources */ = {isa = PBXBuildFile; fileRef = 3DF3DE6C17F1AACF0005C635 /* STDataManager.h */; };
 		3D99068D17F1F27500451D60 /* STDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF3DE6D17F1AACF0005C635 /* STDataManager.m */; };
 		3DA078E817EC270E002CAC15 /* STErrorHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA078E717EC270D002CAC15 /* STErrorHandler.m */; };
+		3DB0FE3B17F2E0AF007F91B8 /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB0FE3917F2E0A3007F91B8 /* NSString+HTML.m */; };
 		3DFF63B417EB806B0043E185 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DFF63B317EB806B0043E185 /* UIKit.framework */; };
 		3DFF63B617EB806B0043E185 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DFF63B517EB806B0043E185 /* Foundation.framework */; };
 		3DFF63B817EB806B0043E185 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DFF63B717EB806B0043E185 /* CoreGraphics.framework */; };
@@ -33,6 +33,8 @@
 /* Begin PBXFileReference section */
 		3DA078E617EC270D002CAC15 /* STErrorHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STErrorHandler.h; sourceTree = "<group>"; };
 		3DA078E717EC270D002CAC15 /* STErrorHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STErrorHandler.m; sourceTree = "<group>"; };
+		3DB0FE3817F2E0A3007F91B8 /* NSString+HTML.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+HTML.h"; sourceTree = "<group>"; };
+		3DB0FE3917F2E0A3007F91B8 /* NSString+HTML.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+HTML.m"; sourceTree = "<group>"; };
 		3DF3DE6C17F1AACF0005C635 /* STDataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STDataManager.h; sourceTree = "<group>"; };
 		3DF3DE6D17F1AACF0005C635 /* STDataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STDataManager.m; sourceTree = "<group>"; };
 		3DFF63B017EB806B0043E185 /* SteelTwitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SteelTwitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,6 +96,8 @@
 		3DA078EA17EC607F002CAC15 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				3DB0FE3817F2E0A3007F91B8 /* NSString+HTML.h */,
+				3DB0FE3917F2E0A3007F91B8 /* NSString+HTML.m */,
 				3DA078E617EC270D002CAC15 /* STErrorHandler.h */,
 				3DA078E717EC270D002CAC15 /* STErrorHandler.m */,
 				3DFF63E217EB81F40043E185 /* STTimeline.h */,
@@ -257,7 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D99068C17F1F27500451D60 /* STDataManager.h in Sources */,
+				3DB0FE3B17F2E0AF007F91B8 /* NSString+HTML.m in Sources */,
 				3D99068D17F1F27500451D60 /* STDataManager.m in Sources */,
 				3DFF63C217EB806B0043E185 /* main.m in Sources */,
 				3DFF63C617EB806B0043E185 /* STAppDelegate.m in Sources */,
@@ -349,6 +353,7 @@
 				GCC_PREFIX_HEADER = "SteelTwitter/SteelTwitter-Prefix.pch";
 				INFOPLIST_FILE = "SteelTwitter/SteelTwitter-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -361,6 +366,7 @@
 				GCC_PREFIX_HEADER = "SteelTwitter/SteelTwitter-Prefix.pch";
 				INFOPLIST_FILE = "SteelTwitter/SteelTwitter-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

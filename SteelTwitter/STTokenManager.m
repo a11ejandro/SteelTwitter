@@ -12,8 +12,6 @@
 
 @implementation STTokenManager
 
-@synthesize token = _token;
-
 + (STTokenManager *) sharedInstance {
     
     static STTokenManager* sharedSingleton = nil;
@@ -26,13 +24,13 @@
 
 - (id) init {
     if (self = [super init]) {
-        userDefaults = [NSUserDefaults standardUserDefaults];
+        _userDefaults = [NSUserDefaults standardUserDefaults];
         _timelineData = [[NSMutableData alloc] init];
-        if ([userDefaults valueForKey:@"tokenCredentials"]) {
-            tokenCredentials = [userDefaults stringForKey:@"tokenCredentials"];
+        if ([_userDefaults valueForKey:@"tokenCredentials"]) {
+            _tokenCredentials = [_userDefaults stringForKey:@"tokenCredentials"];
         } else {
-            tokenCredentials = [self calculateTokenCredentials];
-            [userDefaults setObject:tokenCredentials forKey:@"tokenCredentials"];
+            _tokenCredentials = [self calculateTokenCredentials];
+            [_userDefaults setObject:_tokenCredentials forKey:@"tokenCredentials"];
         }
     }
     return self;
@@ -77,7 +75,7 @@
     NSJSONSerialization *JSONData = [NSJSONSerialization JSONObjectWithData:_timelineData options: 0 error: &error];
     
     if(!error) {
-        _token = [JSONData valueForKey:@"access_token"];
+        self.token = [JSONData valueForKey:@"access_token"];
     }
     [self.delegate didReceiveToken:error];
 }
@@ -91,7 +89,7 @@
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
     
     [request setHTTPMethod: @"POST"];
-    [request setValue:[@"Basic " stringByAppendingString:tokenCredentials] forHTTPHeaderField:@"Authorization"];
+    [request setValue:[@"Basic " stringByAppendingString:_tokenCredentials] forHTTPHeaderField:@"Authorization"];
     [request setValue: STContentTypeInTokenRequest forHTTPHeaderField:@"Content-Type"];
     
     return request;

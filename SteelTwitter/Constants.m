@@ -11,7 +11,7 @@
 @implementation Constants
 
 int const  STNumberOfTweets = 10;
-NSString* const STTargetScreenName = @"Shur1ken";
+NSString* const STTargetScreenName = @"ladygaga";
 
 NSString* const STTimelineAPIAddress = @"https://api.twitter.com/1.1/statuses/user_timeline.json?";
 NSString* const STConsumerKey = @"wyxCds5XTstrA3Bexd8K4g";

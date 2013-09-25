@@ -24,6 +24,7 @@
 
 @property(weak, nonatomic) id <STTimelineDelegate> delegate;
 
+// Receives tweets from timeline api. Begins parsing after receiving.
 - (void) receiveTimeline;
 
 @end
