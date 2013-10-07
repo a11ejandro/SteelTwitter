@@ -79,8 +79,7 @@
 		
 		// process new item
 		Tweet *tweet = [NSEntityDescription insertNewObjectForEntityForName:@"Tweet" inManagedObjectContext:self.managedObjectContext];
-		tweet.text = [tweetDict objectForKey:STTweetTextKey];
-        tweet.created_at = [tweetDict objectForKey:STTweetCreationTimeKey];
+		[tweet setValuesForKeysWithDictionary:tweetDict];
         
         // delete the oldest item
         if ([self.managedObjectContext countForFetchRequest:allTweetsFetchRequest error:nil] > STNumberOfTweets) {
